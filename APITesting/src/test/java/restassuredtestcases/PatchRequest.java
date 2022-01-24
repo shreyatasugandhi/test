@@ -22,6 +22,7 @@ public class PatchRequest {
 
 		System.out.println(reqData.toJSONString());
 		
+		// Sending a patch request for create user and validating response
 		given()
 			.body(reqData.toJSONString())
 		.when()
